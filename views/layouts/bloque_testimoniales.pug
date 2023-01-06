@@ -1,0 +1,11 @@
+.row.testimoniales
+                each resultado in resultados
+
+                    .col-md-6.col-lg-4.mb-4
+                        .card
+                            .card-body
+                                blockquote.blockquote
+                                p.mb-0
+                                    | #{resultado.mensaje}
+                                footer.blockquote-footer
+                                    | #{resultado.nombre}

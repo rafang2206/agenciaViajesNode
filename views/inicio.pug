@@ -1,0 +1,46 @@
+extends ./layouts/index
+
+block slider 
+    .slider
+        h1 Rio de Janeiro
+        em Aventura
+
+block contenido
+    main.container.mt-5.text-center
+        h1 Sobre Nosotros
+        .row.mb-5
+            .col-md-6.text-right 
+                p
+                | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ante libero, lacinia vel volutpat
+                | vel, sollicitudin nec leo. Morbi quis ultricies libero. Proin ut lobortis diam, nec lacinia orci.
+                | Vestibulum non tempor est, vel pulvinar mi. Phasellus nunc tellus, semper gravida volutpat vitae,
+                | auctor sed orci. Morbi pharetra rhoncus ante, a tristique arcu mollis non. Nunc eu tempor dolor.
+                | Morbi nec augue sed mi gravida faucibus. Ut ex arcu, laoreet at diam nec, pharetra cursus velit.
+
+                p 
+                | Proin auctor, sem id suscipit condimentum, massa diam feugiat purus, a gravida mi justo non tortor.
+                | Quisque tempus, orci a sollicitudin semper, quam orci hendrerit diam, nec egestas massa erat at ante. Mauris
+                | iaculis cursus lorem. Vivamus fermentum leo a quam laoreet euismod. Pellentesque dignissim sodales tellus,
+                | et convallis elit dictum convallis. Quisque interdum egestas nisi vitae dictum. Ut enim nisi, bibendum
+                | venenatis efficitur id, consectetur quis ligula. Morbi vitae pellentesque est. Praesent et turpis a eros
+                | faucibus condimentum et at quam. Morbi consequat, tellus eget varius sollicitudin, lectus tortor dapibus augue,
+                | ac sodales ex metus in nisl. Aliquam quis velit arcu. Ut sed tellus egestas, mollis sem non, congue libero.
+            
+            .col-md-6 
+                img(src="/img/inicio_nosotros.jpg", alt="imagen nosotros").img-fluid
+
+        include ./layouts/bloque_viajes
+
+    .descuento
+        .container
+            .row
+                .col-md-6
+                    .contenido
+                        h3 5% de Descuento
+                        p.titulo Viaje a Canada 
+                        p.fecha 20 de Marzo del 2022 - 28 de Marzo del 2022
+                        p.precio $2500 USD
+
+    .container
+        h2.mt-5.text-center Testimoniales
+            include ./layouts/bloque_testimoniales
